@@ -100,6 +100,8 @@ if (!error) return success;
 
 The ternary operator, `?` , should only be used when it increases clarity or code neatness. A single condition is usually all that should be evaluated. Evaluating multiple conditions is usually more understandable as an if statement, or refactored into named variables.
 
+It should only be used when assigning to a variable or return statement 
+
 **For example:**
 ```objc
 result = a > b ? x : y;
@@ -109,6 +111,8 @@ result = a > b ? x : y;
 ```objc
 result = a > b ? x = c > d ? c : d : y;
 ```
+
+If it is longer than around 80characters then we shouldn't use a ternary operator
 
 ## Error Handling
 
