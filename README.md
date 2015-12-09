@@ -109,6 +109,8 @@ result = a > b ? x : y;
 **Not:**
 ```objc
 result = a > b ? x = c > d ? c : d : y;
+or
+a > b ? x = c : nil;
 ```
 
 If it is longer than around 80characters then we shouldn't use a ternary operator
